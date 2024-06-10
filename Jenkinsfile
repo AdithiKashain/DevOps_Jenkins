@@ -4,7 +4,6 @@ pipeline {
     triggers {
         githubPush()
     }
-
     stages {
         stage('Checkout') {
             steps {
@@ -31,7 +30,6 @@ pipeline {
             }
         }
     }
-
     post {
         success {
             echo 'Build succeeded!'
@@ -41,6 +39,6 @@ pipeline {
         }
     }
 }
+//Changes too check automatic build
 
 
-//change to check jenkins build
